@@ -2,4 +2,17 @@
   text-align: center;
 }
 
+h1 {
+  padding-left: 18px;
+  font-size: 6rem;
+  margin: 0px;
+  color: aliceblue;
+}
+
+.header {
+ background-color: black;
+ height: 120px;
+ width: 100%;
+}
+
 
