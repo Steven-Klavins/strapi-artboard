@@ -15,7 +15,7 @@ class App extends React.Component {
       url: "http://localhost:1337/titles"
     });
 
-    const pageTitle = titleRes.data
+    const pageTitle = titleRes.data[0].title
     this.setState({pageTitle})
   }
 
@@ -27,8 +27,7 @@ class App extends React.Component {
     console.log(pageTitle)
     return (
       <div className="header">
-        <h1>Art Board</h1>
-        {pageTitle.toString}
+        <h1>{pageTitle}</h1>
       </div>
     );
   }
